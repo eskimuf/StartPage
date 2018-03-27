@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="myscripts.js"></script>
+
+    <title>Start Page</title>
+
+    <script>
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+            var t = setTimeout(startTime, 500);
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            }; // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+    
+</head>
+
+<body>
+    <div class="header">
+        <h1>Start Page</h1>
+
+        <body onload="startTime()">
+
+            <div id="txt"></div>
+            <form action="http://www.google.com/search" method="get">
+    <input type="text" name="q"/>
+    <input type="submit" value="Google" />
+</form>
+
+    
+
+    <div class="row">
+
+        <div class="col-3 col-m-3 menu">
+            <h1> Social</h1>
+            <ul>
+                <a href="https://en-gb.facebook.com/">
+                    <li>Facebok</li>
+                </a>
+                <a href="https://www.instagram.com/?hl=en">
+                    <li>Instagram</li>
+                </a>
+                <a href="https://twitter.com/login?lang=en-gb">
+                    <li>Twitter</li>
+                </a>
+                <a href="https://outlook.live.com/owa/">
+                    <li>Outlook</li>
+                </a>
+                <a href="https://www.google.com/gmail/about/#">
+                    <li>Gmail</li>
+                </a>
+                <a href="https://discordapp.com/">
+                    <li>Discord</li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-3 col-m-3 menu">
+            <h1> Shopping</h1>
+            <ul>
+                <a href="https://www.amazon.co.uk/">
+                    <li>Amazon</li>
+                </a>
+                <a href="https://www.ebay.co.uk/">
+                    <li>eBay</li>
+                </a>
+                <a href="http://www.argos.co.uk/">
+                    <li>Argos</li>
+                </a>
+                <a href="https://www.johnlewis.com/">
+                    <li>John Lewis</li>
+                </a>
+                <a href="https://www.pcworld.co.uk/gbuk/index.html">
+                    <li>PCWorld</li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-3 col-m-3 menu">
+            <h1> Work</h1>
+            <ul>
+                <a href="https://webmail.hastings.ac.uk">
+                    <li>Outlook</li>
+                </a>
+                <a href="https://saas.ngahr.com/escg/dashboard/dashboard-ui/index.html#/landing">
+                    <li>MyView</li>
+                </a>
+                <a href="https://prosolution.hastings.ac.uk/ProSolution">
+                    <li>eProSolution</li>
+                </a>
+                <a href="https://prosolution.hastings.ac.uk/ProMonitor">
+                    <li>ProMonitor</li>
+                </a>
+                <a href="www.turing.sussexcoast.ac.uk">
+                    <li>Turing</li>
+                </a>
+            </ul>
+        </div>
+        <div class="col-3 col-m-3 menu">
+            <h1> Other</h1>
+            <ul>
+                <a href="cakes.html">
+                    <li>a</li>
+                </a>
+                <a href="cakes.html">
+                    <li>a</li>
+                </a>
+                <a href="cakes.html">
+                    <li>a</li>
+                </a>
+                <a href="cakes.html">
+                    <li>a</li>
+                </a>
+                <a href="cakes.html">
+                    <li>a</li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="col-6 col-m-9">
+                
+            
+        </div>
+
+        <div class="col-3 col-m-12">
+            <h3>News Feed</h3>
+            <div class="aside">
+                <div class="feedgrabbr_widget" id="fgid_5b021afbf7a05f0de3c4109a8"></div>
+                <script>if (typeof (fg_widgets) === "undefined") fg_widgets = new Array(); fg_widgets.push("fgid_5b021afbf7a05f0de3c4109a8");</script>
+                <script async src="https://www.feedgrabbr.com/widget/fgwidget.js"></script>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <footer>&copy; Copyright 2018 - Ryan Hills</footer>
+
+    </div>
+
+    </body>
